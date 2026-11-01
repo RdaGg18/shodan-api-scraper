@@ -1,5 +1,5 @@
 from shodan   import Shodan, exception
-from datetime import datetime, timedelta
+from datetime import datetime
 from time     import time, sleep
 from dotenv   import load_dotenv
 
@@ -32,7 +32,7 @@ main_log.addHandler(console)
 main_log.addHandler(file)
 
 MIN_CREDITS = 10
-MAX_RESULTS = 10 # Set to -1 for all results
+MAX_RESULTS = -1 # Set to -1 for all results
 
 REGEX       = re.compile(r'(?<![A-Za-z0-9])[A-Za-z0-9]{32}(?![A-Za-z0-9])') #idk this regex jst copied it from google
 OUTPUT_FILE = "found_keys.json"
