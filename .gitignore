@@ -6,6 +6,7 @@ venv/
 
 # Found API Keys
 found_keys.json
+logs/
 
 # VS Code
 .vscode/

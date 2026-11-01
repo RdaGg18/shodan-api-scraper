@@ -22,8 +22,8 @@ cd shodan-api-scraper
 
 2. **Install Prerequisites**
 ```bash
-python -m venv venv           # Build a virtual environment first
-pip install shodan github3.py # Install the requirements
+python -m venv venv                         # Build a virtual environment first
+pip install shodan github3.py python-dotenv # Install the requirements
 ```
 
 3. **Insert Credentials**
@@ -43,12 +43,12 @@ python main.py
 
 - **Example Outputs**:
 ```bash
-[25/08/2026 11:07:22]-[*] running
+[01/11/2026 16:44:30]-[INFO] Starting Query language:python sd=shodan(
 ...
-[25/08/2026 12:31:22]-[!] Shodan Key(********************************) Error: Invalid API key
+[01/11/2026 16:55:31]-[INFO] Found ... results!
+[01/11/2026 16:55:31]-[INFO] Fetching files...
 ...
-[25/08/2026 11:07:22]-[*] Found token ********************************
-...
+[01/11/2026 17:19:39]-[DEBUG] API Key: ****************************** invalid
 ```
 
 ## Responsible use
